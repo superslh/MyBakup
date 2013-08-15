@@ -1,2 +1,9 @@
 mklink /j   D:\PortableApp\Vim\vimfiles E:\GitRepo\MyBakup\VimBakup\vimfiles
 mklink   D:\PortableApp\Vim\_vimrc E:\GitRepo\MyBakup\VimBakup\_vimrc
+
+
+
+测试中文
+
+测试中文2222：:w
+

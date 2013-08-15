@@ -37,25 +37,25 @@ call pathogen#infect()
 
 
 
-"ÉèÖÃÄÚºËÎªUTF-8
+"è®¾ç½®å†…æ ¸ä¸ºUTF-8
 "set enc=utf-8
-"ÉèÖÃ½âÂëË³Ğò,Õâ¸öË³Ğò¾­²âÊÔ¿ÉÒÔºÜºÃµÄÊ¶±ğUTF-8,JIS,GBK
+"è®¾ç½®è§£ç é¡ºåº,è¿™ä¸ªé¡ºåºç»æµ‹è¯•å¯ä»¥å¾ˆå¥½çš„è¯†åˆ«UTF-8,JIS,GBK
 "set fencs=utf-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936
 
 
-"ËÑË÷ºöÂÔ´óĞ¡Ğ´  
+"æœç´¢å¿½ç•¥å¤§å°å†™  
 set ignorecase
 
-"½ûÖ¹Éú³ÉÁÙÊ±ÎÄ¼ş 
+"ç¦æ­¢ç”Ÿæˆä¸´æ—¶æ–‡ä»¶ 
 set nobackup  
 
-"ÓïÑÔÉèÖÃ  
+"è¯­è¨€è®¾ç½®  
 "set langmenu=zh_CN.UTF-8  
 "language message zh_CN.UTF-8  
 "set guifont=NSimSun:h10  
 "set guifont=Courier_New:h12:cANSI
-set guifont=ºÚÌå:h14:cANSI
-set guifontwide=ºÚÌå:h12:cGB2312
+set guifont=é»‘ä½“:h14:cANSI
+set guifontwide=é»‘ä½“:h12:cGB2312
 
 set encoding=utf-8
 set fileencodings=utf-8,chinese,latin-1
@@ -66,42 +66,42 @@ else
 set fileencoding=utf-8
 endif
 
-"½â¾ö²Ëµ¥ÂÒÂë
+"è§£å†³èœå•ä¹±ç 
 source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
-"½â¾öconsleÊä³öÂÒÂë
+"è§£å†³consleè¾“å‡ºä¹±ç 
 language messages zh_CN.utf-8
 
 
 
-""""""""IMEÉèÖÃ
+""""""""IMEè®¾ç½®
 "http://blog.csdn.net/lixiaodong037/article/details/6181531
-"±È½ÏÖÇÄÜµÄÉèÖÃ£¬»á¼ÇÂ¼ÊäÈë·¨×´Ì¬
+"æ¯”è¾ƒæ™ºèƒ½çš„è®¾ç½®ï¼Œä¼šè®°å½•è¾“å…¥æ³•çŠ¶æ€
 set iminsert=0 imsearch=0
 if has('multi_byte_ime')
-	"Î´¿ªÆôIMEÊ±¹â±ê±³¾°É«
+	"æœªå¼€å¯IMEæ—¶å…‰æ ‡èƒŒæ™¯è‰²
 	hi Cursor guifg=bg guibg=Orange gui=NONE
-	"¿ªÆôIMEÊ±¹â±ê±³¾°É«
+	"å¼€å¯IMEæ—¶å…‰æ ‡èƒŒæ™¯è‰²
 	hi CursorIM guifg=NONE guibg=Skyblue gui=NONE
-	" ¹Ø±ÕVimµÄ×Ô¶¯ÇĞ»»IMEÊäÈë·¨(²åÈëÄ£Ê½ºÍ¼ìË÷Ä£Ê½)
+	" å…³é—­Vimçš„è‡ªåŠ¨åˆ‡æ¢IMEè¾“å…¥æ³•(æ’å…¥æ¨¡å¼å’Œæ£€ç´¢æ¨¡å¼)
 	set iminsert=0 imsearch=0
-	" ²åÈëÄ£Ê½ÊäÈë·¨×´Ì¬Î´±»¼ÇÂ¼Ê±£¬Ä¬ÈÏ¹Ø±ÕIME
+	" æ’å…¥æ¨¡å¼è¾“å…¥æ³•çŠ¶æ€æœªè¢«è®°å½•æ—¶ï¼Œé»˜è®¤å…³é—­IME
 	"inoremap <silent> <ESC> <ESC>:set iminsert=0<CR>
 endif
 
 
 
-""""""""latex suite ÉèÖÃ
+""""""""latex suite è®¾ç½®
 set shellslash
 set grepprg=grep\ -nH\ $*
 filetype indent on
 let g:tex_flavor='latex'
 set sw=2
 set iskeyword+=:
-"ÏÂÃæÕâ¾äÊÇÎªÁË¸ÄµôÃ¿´ÎÊäÍê£û£ı×Ô¶¯¼Ó¸ö<++>
-"Èç¹û²»¸ÄµÄ»¯Ö±½Óctrl+j¿ÉÒÔÌø×ªµ½ÕâÀï£¬È»ºó»á×Ô¶¯É¾³ıµô<++>
+"ä¸‹é¢è¿™å¥æ˜¯ä¸ºäº†æ”¹æ‰æ¯æ¬¡è¾“å®Œï½›ï½è‡ªåŠ¨åŠ ä¸ª<++>
+"å¦‚æœä¸æ”¹çš„åŒ–ç›´æ¥ctrl+jå¯ä»¥è·³è½¬åˆ°è¿™é‡Œï¼Œç„¶åä¼šè‡ªåŠ¨åˆ é™¤æ‰<++>
 let g:Imap_UsePlaceHolders=0
-"ĞŞ¸ÄÄ¬ÈÏÓÃxelatex±àÒë
+"ä¿®æ”¹é»˜è®¤ç”¨xelatexç¼–è¯‘
 let g:Tex_CompileRule_pdf = 'xelatex --src-specials -interaction=nonstopmode $*'
 let g:Tex_DefaultTargetFormat = 'pdf'
 let g:Tex_ViewRule_pdf = 'AcroRd32'
@@ -109,7 +109,7 @@ let g:Tex_ViewRule_pdf = 'AcroRd32'
 
 
 
-"ÉèÖÃcomment·½Ê½£¬ÕÒÁËºÜ¾Ã£¬ºÇºÇ
+"è®¾ç½®commentæ–¹å¼ï¼Œæ‰¾äº†å¾ˆä¹…ï¼Œå‘µå‘µ
 setlocal commentstring=<!--%s-->
 setlocal comments=s:<!--,m:\ \ \ \ ,e:-->
 
