@@ -5,3 +5,5 @@
 vim，待续。。。
 
 vim 含插件 git-vim ， snipmate.vim  , vim-pandoc
+
+为什用github同步会乱码
