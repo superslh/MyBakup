@@ -9,8 +9,6 @@ set nocompatible
 source $VIMRUNTIME/mswin.vim
 behave mswin        "兼容windws命令
 
-
-
 "插件管理pathogn生效
 call pathogen#infect()
 
@@ -105,13 +103,23 @@ map <C-w> :!pandoc % -o %:r.html -Ss -N -c github.css<CR>
 "nmap <leader>hl !pandoc % -o %:r.html -Ss -N -c github.css <CR>
 """"""""""
 
+"**************************************************
+"           保存md文件自动更新日期                *             
+"                                                 *
+"**************************************************
 
-"自动加载NERDTree
+
+
+nmap <F8> :NERDTree <CR>
+
 "ctrl+w+h 左边窗口  ctrl+w+l右边窗口
 "光标移动到右边  :q关闭nerdtree
 "autocmd vimenter * NERDTree
 "
-"
+"**************************************************
+
+
+
 "**************************************************
 "           保存md文件自动更新日期                *             
 "                                                 *
@@ -127,3 +135,4 @@ endfunc
 au BufWritePre *.md call MikewikiUpdateDatetime()
 
 "**************************************************
+"<!--date-->
